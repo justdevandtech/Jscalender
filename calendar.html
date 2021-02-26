@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Javascript Calendar</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="calendar.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+    <div class="col">
+      <div class="w-100" id="cal-wrap">
+      <!-- [PERIOD SELECTOR] -->
+      <div id="cal-date">
+        <select id="cal-mth"></select>
+        <select id="cal-yr"></select>
+        <input id="cal-set" type="button" value="SET"/>
+      </div>
+
+      <!-- [CALENDAR] -->
+      <div class="w-100" id="cal-container"></div>
+
+      <!-- [EVENT] -->
+      <div class="w-100" id="cal-event"></div>
+    </div>
+
+    </div>
+</div>
+<button class="btn btn-success mt-3" onclick="openFullscreen();">Open Fullscreen</button>
+    </div>
+
+    
+  
+    
+
+    <script src="calendar.js"></script>
+  </body>
+</html>
